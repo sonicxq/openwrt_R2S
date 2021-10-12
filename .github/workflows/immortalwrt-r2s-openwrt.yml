@@ -29,7 +29,7 @@ jobs:
     - name: Clone Source
       run: |
         cd "/home/runner"
-        git clone --branch "openwrt-18.06-k5.4" --single-branch "https://github.com/immortalwrt/immortalwrt" "immortalwrt"
+        git clone --branch "openwrt-18.06-k5.4" --single-branch "https://github.com/sonicxq/openwrt" "immortalwrt"
         sudo chown -R runner:runner "immortalwrt"
         cd "/home/runner/immortalwrt"
         ./scripts/feeds update -a
